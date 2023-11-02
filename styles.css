@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.page {
+    display: none;
+}
+
+.centered-title {
+    text-align: center;
+}
+
+.advert {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.advert-img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review {
+    text-align: center;
+    width: 30%;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #000; /* případně upravte barvu podle vašich preferencí */
+}
+
+
+
+
+
+.story-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.story-img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.story-text {
+    width: 60%;
+}
+.reklama {
+    background-color: #add8e6; /* Světle modré pozadí */
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reklama a {
+    text-decoration: none;
+    color: #fff; /* Zvýrazněná bílá barva textu */
+    font-weight: bold;
+}
+
+.reklama-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.story-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.story-link a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff; /* Modré pozadí */
+    color: white; /* Bílý text */
+    text-decoration: none;
+    border-radius: 5px; /* Zakulacené rohy */
+    transition: background-color 0.3s; /* Animace pro efekt přejetí */
+}
+
+.story-link a:hover {
+    background-color: #0056b3; /* Tmavší modrá při najetí myší */
+}
+.coaching-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.coaching-img {
+    width: 30%; /* Nová zmenšená velikost obrázku */
+    height: auto;
+    margin-right: 20px; /* Přidáváme okraj pro oddělení od textu */
+}
+
+.coaching-text {
+    width: 60%;
+    padding: 20px; 
+    margin-left: 20px;
+    line-height: 1.6; /* Zvětšuje výšku řádku pro lepší čitelnost */
+    text-align: justify; /* Zarovná text do bloku */
+}
+
+.coaching-text h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.coaching-text ul {
+    list-style: inside disc; /* Používá kulaté odrážky a zarovnává je dovnitř */
+}
+
+.coaching-text ul li {
+    margin-bottom: 5px; /* Přidává mezery mezi body seznamu */
+}
+
+.coaching-link a {
+    display: inline-block;
+    text-decoration: none; /* Odstraní podtržení textu */
+    color: white; /* Bílá barva textu */
+    background-color: #007bff; /* Modrá barva pozadí */
+    padding: 15px 30px; /* Vnitřní odsazení pro zvětšení tlačítka */
+    border-radius: 5px; /* Kulaté rohy */
+    transition: background-color 0.3s; /* Plynulá změna barvy při najetí */
+    font-size: 1.2em; /* Zvětšení písma */
+}
+
+.coaching-link a:hover {
+    background-color: #0056b3; /* Tmavší modrá při najetí myší */
+}
+
+
+/* Styly pro stránku "O nás" */
+.onas-obrazek,
+.onas-text {
+    text-align: center; /* Centruje obsah */
+    margin-top: 20px;
+}
+
+.onas-obrazek img {
+    /* width: 200px; */ /* Zakomentované pro použití původní velikosti obrázku */
+    height: auto;
+    margin-bottom: 20px; /* Oddělení obrázku od textu */
+}
+
+.onas-text {
+    width: 60%; /* Šířka bloku s textem */
+    margin: 0 auto; /* Centruje blok na středu */
+    text-align: center; /* Zarovnává text do středu */
+}
+
+@media (max-width: 768px) {
+    .onas-text {
+        width: 80%; /* Větší šířka na menších zařízeních */
+    }
+}
+
+.logo-img {
+    width: 100px; /* Šířka loga */
+    height: 100px; /* Výška loga */
+}
+
+.logo-center {
+    text-align: center; /* Zarovnání loga na střed */
+    margin-top: 20px; /* Horní okraj pro oddělení od nadpisu */
+    margin-bottom: 20px; /* Dolní okraj pro oddělení od obsahu níže */
+}
+
+.results-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.game-img {
+    width: 225px; /* zvýšení původní šířky (150px) o 50% */
+    margin-right: 20px;
+}
+
+.game-description {
+    width: calc(100% - 245px); /* nový výpočet, zohledňuje novou šířku obrázku a margin */
+}
+
+
+.game-description h3 {
+    margin-top: 0;
+}
+
+/* Přidat jakékoli další globální styly, které jste definovali pro ostatní stránky */
+
+.faq-item summary {
+    background-color: #0044cc;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 10px; /* Pro oddělení otázek */
+}
+
+.faq-item p {
+    padding: 18px;
+    background-color: white;
+}
+
+.instagram-photos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.instagram-photo {
+    width: 300px;
+    height: 300px;
+    margin: 0 10px; /* Pro oddělení fotek */
+}
+
+.instagram-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Tmavší modrá při najetí myší */
+}
+
+.game-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px; /* Zvětšený okraj pro větší mezeru mezi logy */
+}
+
+.section-divider {
+    border: 0; /* odstraníme standardní okraj */
+    height: 2px; /* nastavíme výšku čáry */
+    background-color: #333; /* nastavíme barvu čáry */
+    margin: 20px 0; /* přidáme vertikální okraje pro trochu prostoru nad a pod čárou */
+}

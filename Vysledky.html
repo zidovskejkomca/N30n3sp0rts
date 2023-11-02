@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neon Esports Club</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function showPage(pageName) {
+                var pages = document.getElementsByClassName('page');
+                for (var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+                document.getElementById(pageName).style.display = 'block';
+            }
+        </script>
+    </head>
+    <body onload="showPage('home')">
+    
+        <header>
+            <h1>Neon Esports Club</h1>
+            <div class="logo-center">
+                <img src="logoneon.webp" alt="Logo Neon Esports Club" class="logo-img">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="domu.html" onclick="showPage('home'); return false;">Domů</a></li>
+                    <li><a href="Onas.html">O nás</a></li> <!-- Upravený odkaz -->
+                    <li><a href="Coaching.html" onclick="showPage('coaching'); return false;">Coaching</a></li>
+                    <li><a href="Vysledky.html" onclick="showPage('merch'); return false;">Výsledky</a></li>
+                    <li><a href="Kontakt.html" onclick="showPage('contact'); return false;">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+<body>
+
+    <div class="results-section">
+        <img src="rocket.png" alt="Rocket League" class="game-img">
+        <div class="game-description">
+            <h3>Rocket League Turnaj</h3>
+            <p>Neon Esports Club se nedávno zúčastnil vzrušujícího turnaje ve hře Rocket League. Naši hráči ukázali neuvěřitelné dovednosti a týmovou práci, přičemž každý zápas byl plný napínavých momentů. Kluci projevili skvělou hru a dosáhli působivých výsledků!</p>
+        </div>
+    </div>
+
+    <div class="results-section">
+        <img src="kia.png" alt="League of Legends" class="game-img">
+        <div class="game-description">
+            <h3>League of Legends Soutěž</h3>
+            <p>V nedávném turnaji League of Legends se náš tým Neon Esports Club opět předvedl ve své nejlepší formě. S brilantními strategiemi a dokonalou souhrou jsme dosáhli nejen velkých vítězství, ale i obdivu fanoušků. Je skvělé vidět, jak se náš tým neustále vyvíjí a zlepšuje.</p>
+        </div>
+    </div>
+
+    <div class="reklama">
+        <a href="https://www.fly5.cz/gaming_spot/">
+            <img src="https://cdn.myshoptet.com/usr/www.fly5.cz/user/logos/fly5logo-1.png" alt="FLY5 Logo" class="reklama-img">
+            <p>Probíhá sleva 25% na první návštěvu Gaming Spotu!</p>
+        </a>
+    </div>
+    
+    <footer>
+        © 2023 Neon Esports Club
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Esports Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPage(pageName) {
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            document.getElementById(pageName).style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="showPage('home')">
+
+    <header>
+        <h1>Neon Esports Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home'); return false;">Domů</a></li>
+                <li><a href="#" onclick="showPage('about'); return false;">O nás</a></li>
+                <li><a href="#" onclick="showPage('coaching'); return false;">Coaching</a></li>
+                <li><a href="#" onclick="showPage('merch'); return false;">Merch</a></li>
+                <li><a href="#" onclick="showPage('contact'); return false;">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="page">
+        <h2 class="centered-title">Vítejte na našem webu</h2>
+        <img src="openspot.png" alt="Open Spot" style="width:100%; height:auto;">
+      
+
+        <h2 class="centered-title">Příběh našeho herního klubu</h2>
+        <div class="story-section">
+            <img src="Neonlanka.png" alt="Neonlanka" class="story-img">
+            <div class="story-text">
+                <p>Neon Esports Club byl založen s jediným cílem: poskytnout fanouškům a hráčům nezapomenutelné herní zážitky.</p>
+                <p>Náš klub se rychle stal místem, kde se mísí vášeň, zábava a přátelská rivalita.</p>
+                <p>Od počátku jsme se soustředili na kultivaci talentů a rozvoj e-sportovní komunity.</p>
+                <p>V Neon Esports Club najdete nejen skvělé prostředí pro hraní, ale také podporu a motivaci k dosahování vašich herních cílů.</p>
+                <p>Připojte se k nám a staňte se součástí naší neustále se rozvíjející rodiny!</p>
+            </div>
+        </div>
+        <h2 class="centered-title">Hodnocení zákazníků</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>Jan Novák: "Nejlepší zážitek, skvělá atmosféra!"</p>
+                <img src="kuba.png" alt="Jan Novák" class="review-img">
+            </div>
+            <div class="review">
+                <p>Jakub Dvořák: "Perfektní prostředí pro gaming."</p>
+                <img src="komca.png" alt="Jakub Dvořák" class="review-img">
+            </div>
+            <div class="review">
+                <p>David Nový: "Doporučuji všem, kdo milují hry!"</p>
+                <img src="beny.png" alt="David Nový" class="review-img">
+            </div>
+        </div>
+    </div>
+    <div class="reklama">
+        <a href="https://www.fly5.cz/gaming_spot/">
+            <img src="https://cdn.myshoptet.com/usr/www.fly5.cz/user/logos/fly5logo-1.png" alt="FLY5 Logo" class="reklama-img">
+            <p>Probíhá sleva 25% na první návštěvu Gaming Spotu!</p>
+        </a>
+    </div>
+    
+    <footer>
+        © 2023 Neon Esports Club
+    </footer>
+    
+    <!-- další stránky... -->
+
+   
+
+</body>
+</html>

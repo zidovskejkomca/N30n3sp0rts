@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Esports Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPage(pageName) {
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            document.getElementById(pageName).style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="showPage('home')">
+
+    <header>
+        <h1>Neon Esports Club</h1>
+        <div class="logo-center">
+            <img src="logoneon.webp" alt="Logo Neon Esports Club" class="logo-img">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="domu.html" onclick="showPage('home'); return false;">Domů</a></li>
+                <li><a href="Onas.html">O nás</a></li> <!-- Upravený odkaz -->
+                <li><a href="Coaching.html" onclick="showPage('coaching'); return false;">Coaching</a></li>
+                <li><a href="Vysledky.html" onclick="showPage('merch'); return false;">Výsledky</a></li>
+                <li><a href="Kontakt.html" onclick="showPage('contact'); return false;">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="page">
+        <h2 class="centered-title">Vítejte na našem webu</h2>
+        <a href="https://www.fly5.cz/gaming_spot/">
+            <img src="openspot.png" alt="Open Spot" style="width:100%; height:auto;">
+        </a>
+      
+
+        <h2 class="centered-title">Příběh našeho herního klubu</h2>
+        <div class="story-section">
+            <img src="Neonlanka.png" alt="Neonlanka" class="story-img">
+            <div class="story-text">
+                <p>Neon Esports Club byl založen s jediným cílem: poskytnout fanouškům a hráčům nezapomenutelné herní zážitky.</p>
+                <p>Náš klub se rychle stal místem, kde se mísí vášeň, zábava a přátelská rivalita.</p>
+                <p>Od počátku jsme se soustředili na kultivaci talentů a rozvoj e-sportovní komunity.</p>
+                <p>V Neon Esports Club najdete nejen skvělé prostředí pro hraní, ale také podporu a motivaci k dosahování vašich herních cílů.</p>
+                <p>Připojte se k nám a staňte se součástí naší neustále se rozvíjející rodiny!</p>
+            </div>
+            <div class="story-link">
+                <a href="Onas.html">Více o nás</a>
+            </div>
+            
+        </div>
+        <h2 class="centered-title">Hodnocení zákazníků</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>Jan Novák: "Nejlepší zážitek, skvělá atmosféra!"</p>
+                <img src="kuba.png" alt="Jan Novák" class="review-img">
+            </div>
+            <div class="review">
+                <p>Jakub Dvořák: "Perfektní prostředí pro gaming."</p>
+                <img src="komca.png" alt="Jakub Dvořák" class="review-img">
+            </div>
+            <div class="review">
+                <p>David Nový: "Doporučuji všem, kdo milují hry!"</p>
+                <img src="beny.png" alt="David Nový" class="review-img">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="centered-title">Často kladené otázky</h2>
+<div class="faq-section">
+    <details class="faq-item">
+        <summary>Jak se mohu připojit k Neon Esports Club?</summary>
+        <p>Pro připojení k nášemu klubu navštivte naši stránku Připoj se k nám nebo nás kontaktujte přes e-mail nebo telefon.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Jaké hry hrajeme?</summary>
+        <p>Hrajeme různé hry včetně populárních titulů jako League of Legends, CS:GO, Fortnite a mnoho dalších.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Jak mohu podpořit váš tým?</summary>
+        <p>Můžete nás podpořit sledováním našich zápasů, nákupem klubového zboží nebo přímo finančním příspěvkem na podporu klubu.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Kde nás můžete sledovat?</summary>
+        <p>Sledujte nás na sociálních sítích jako jsou Twitter, Facebook, a Twitch pro nejnovější aktualizace a livestreamy.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Organizujete i offline akce?</summary>
+        <p>Ano, pořádáme pravidelné offline akce a turnaje, kde se můžete setkat s ostatními hráči a fanoušky.</p>
+    </details>
+</div>
+
+<div class="instagram-section">
+    <h2 class="centered-title">Sledujte mě na Instagramu</h2>
+    <div class="instagram-photos">
+        <img src="neon1.png" alt="Instagram Neon 1" class="instagram-photo">
+        <img src="neon2.png" alt="Instagram Neon 2" class="instagram-photo">
+        <img src="neon3.png" alt="Instagram Neon 3" class="instagram-photo">
+    </div>
+    <div class="instagram-link">
+        <a href="https://www.instagram.com/justneonstar" class="button">Sledujte mě na Instagramu</a>
+    </div>
+</div>
+
+<hr class="section-divider">
+
+<div class="games-section">
+    <h2 class="centered-title">Soustředíme se na hry</h2>
+    <div class="game-logos">
+        <img src="hra1.png" alt="Hra 1" class="game-logo">
+        <img src="hra2.png" alt="Hra 2" class="game-logo">
+        <img src="hra3.png" alt="Hra 3" class="game-logo">
+        <img src="hra4.png" alt="Hra 4" class="game-logo">
+    </div>
+</div>
+
+
+    <div class="reklama">
+        <a href="https://www.fly5.cz/gaming_spot/">
+            <img src="https://cdn.myshoptet.com/usr/www.fly5.cz/user/logos/fly5logo-1.png" alt="FLY5 Logo" class="reklama-img">
+            <p>Probíhá sleva 25% na první návštěvu Gaming Spotu!</p>
+        </a>
+    </div>
+    
+    <footer>
+        © 2023 Neon Esports Club
+    </footer>
+    
+
+
+   
+
+</body>
+</html>
